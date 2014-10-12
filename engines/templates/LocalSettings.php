@@ -18,8 +18,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "Engines OS";
-$wgMetaNamespace = "Engines_OS";
+$wgSitename = "WIKI_TITLE";
+$wgMetaNamespace = "WIKI_TITLE_SHORT";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -44,18 +44,19 @@ $wgLogo = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "james@jvodan.com";
-$wgPasswordSender = "james@jvodan.com";
+$wgEmergencyContact = "WIKI_EMAIL";
+$wgPasswordSender = "WIKI_EMAIL";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "$dbhost;
-$wgDBname = "$dbname";
-$wgDBuser = "$dbuser";
-$wgDBpassword = "$dbpass";
+$wgDBserver = "DBHOST;
+$wgDBname = "DBNAME";
+$wgDBuser = "DBUSER";
+$wgDBpassword = "DBPASS";
+
 
 # MySQL specific settings
 $wgDBprefix = "";
@@ -72,9 +73,9 @@ $wgMemCachedServers = array();
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
-$wgEnableUploads = false;
-#$wgUseImageMagick = true;
-#$wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgEnableUploads = true;
+$wgUseImageMagick = true;
+$wgImageMagickConvertCommand = "/usr/bin/convert";
 
 # InstantCommons allows wiki to use images from http://commons.wikimedia.org
 $wgUseInstantCommons = false;
@@ -88,7 +89,7 @@ $wgShellLocale = "C.UTF-8";
 ## create the directories images/archive, images/thumb and
 ## images/temp, and make them all writable. Then uncomment
 ## this, if it's not already uncommented:
-#$wgHashedUploadDirectory = false;
+$wgHashedUploadDirectory = false;
 
 ## Set $wgCacheDirectory to a writable directory on the web server
 ## to make your wiki go slightly faster. The directory should not
