@@ -19,7 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 # $wgDisableOutputCompression = true;
 
 $wgSitename = "WIKI_TITLE";
-$wgMetaNamespace = "WIKI_TITLE_SHORT";
+$wgMetaNamespace = "WIKI_SHORT_TITLE";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -52,7 +52,7 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "DBHOST;
+$wgDBserver = "DBHOST";
 $wgDBname = "DBNAME";
 $wgDBuser = "DBUSER";
 $wgDBpassword = "DBPASS";
