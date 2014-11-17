@@ -2,7 +2,7 @@
 
 cd /home/app/maintence
 php maintenance/install.php
-
-mkdir images/temp images/archive images/thumbs
-chown og+w images/temp images/archive images/thumbs
+cd /home/app
+mkdir -p images/temp images/archive images/thumbs
+chmod g+w images/temp images/archive images/thumbs
 
