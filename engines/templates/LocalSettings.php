@@ -31,7 +31,7 @@ $wgScriptPath = "";
 $wgScriptExtension = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://_ENGINES_FQDN";
+$wgServer = "http://ENGINE_FQDN";
 
 ## The relative URL path to the skins directory
 $wgStylePath = "$wgScriptPath/skins";
