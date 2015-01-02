@@ -1,8 +1,9 @@
 #!/bin/bash
 cd /home/app/
-php maintenance/install.php --scriptpath ./ --dbname $dbname --dbserver $dbhost  --dbuser $dbuser --dbpass $dbpasswd --server http://$fqdn/   $user_entered_short_title $wiki_admin_email --pass $admin_pass "Wiki Title" admin
+php maintenance/install.php --scriptpath "" --dbname $dbname --dbserver $dbhost  --dbuser $dbuser --dbpass $dbpasswd --server http://$fqdn/   $user_entered_short_title $wiki_admin_email --pass $admin_pass "Wiki Title" admin
 
-
+cp /home/app/LocalSettings.php /home/fs/wikifs/
+ln -s /home/fs/wikifs/LocalSettings.php /home/app/testLocalSettings.php
 
 cd /home/app
 mkdir -p images/temp images/archive images/thumbs
